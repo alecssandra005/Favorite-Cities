@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+body {
+  font-family: 'Lora';
+  background-color: #B9E5E8;
+  margin: 0;
+  padding: 0;
+  color: #171717;
+  overflow: hidden;
+}
+
+main {
+  padding-top: 60px; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spatiază elementele pe întreaga lățime */
+  align-items: center; /* Centrează elementele pe verticală */
+  background-color: #4A628A; /* Culoarea de fundal a barei */
+  padding: 20px 20px; /* Margine internă pentru bară */
+  position: fixed; /* Fixează bara în partea de sus */
+  top: 0;
+  left: 0;
+  width: 100%; /* Face bara să ocupe întreaga lățime a paginii */
+  z-index: 1000; /* Asigură-te că bara este deasupra altor elemente */
+  transform: scale(1);
+}
+
+/* Stiluri pentru butoane */
+.navbar button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0.2, 0, 0.3, 0.1);
+}
+
+/* Stiluri pentru hover la butoane */
+.navbar button:hover {
+  background-color: #afb0b3
+}
+
+/* Stiluri pentru logo */
+.navbar .logo img {
+  height: 70px;
+  width: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4A628A;
+  text-align: left;
+  font-family: 'Lora';
+  position: absolute;
+  left: 600px;
+  top: 25%;
+  bottom: 70%;
+}
+
+
+p {
+  font-size: 1.7rem;
+  color: #4e5b73;
+  text-align: left;
+  position: absolute;
+  left: 500px;
+  top: 35%;
+}
+
+
+.favorites-box {
+  background-color: #f8f8f8;  /* Culoare de fundal pentru casetă */
+  padding: 10px;               /* Spațiu intern pentru casetă */
+  border-radius: 10px;         /* Colțuri rotunjite */
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);  /* Umbra subtilă */
+  margin-top: 30px;            /* Spațiu deasupra casetei */
+  width: 500px;                /* Lățimea fixă a casetei */
+  text-align: center;            /* Aliniere a textului la stânga */
+  margin-left: auto;           /* Centrare orizontală */
+  margin-right: auto;          /* Centrare orizontală */
+  position: absolute;
+  top: 350px;
+  left: 500px;
+}
+
+/* Stiluri pentru titlul casetei */
+.favorites-box h2 {
+  font-size: 1.5rem;           /* Dimensiunea fontului */
+  color: #4A628A;              /* Culoare text */
+  margin-bottom: 10px;         /* Spațiu sub titlu */
+}
+
+/* Stiluri pentru lista de orașe */
+.favorites-box ol {
+  padding-left: 20px;          /* Adaugă un pic de padding la stânga pentru listă */
+}
+
+.favorites-box li {
+  font-size: 1rem;             /* Dimensiune font pentru fiecare element */
+  color: #333;                 /* Culoare text pentru fiecare element */
+  margin-bottom: 5px;          /* Spațiu între elemente */
+}
+
+/* Stiluri pentru butonul "Show more" */
+.show-more-btn {
+  background-color: #4A628A;   /* Culoare de fundal pentru buton */
+  color: white;                /* Culoare text */
+  border: none;                /* Fără bordură */
+  padding: 10px 15px;          /* Spațiu intern în buton */
+  border-radius: 5px;          /* Colțuri rotunjite */
+  cursor: pointer;             /* Cursor pointer pe buton */
+  margin-top: 10px;             /* Spațiu deasupra butonului */
+}
+
+.show-more-btn:hover {
+  background-color: #3b4a66;   /* Culoare mai închisă la hover */
+}
+
+
+.search-container {
+  position: absolute;
+  right: 200px;         /* Plasare la marginea dreaptă */
+  top: 300px;          /* Distanță de sus pentru a-l separa de header */
+  padding: 0px;       /* Spațiu intern */
+  width: 400px;        /* Lățimea containerului */
+  text-align: center;  /* Centrarea textului */
+}
+
+/* Stiluri pentru titlul Search bar-ului */
+.search-container h2 {
+  font-size: 2 rem;
+  color: #4A628A;
+  margin-bottom: 20px;
+}
+
+/* Stiluri pentru input-ul de căutare */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #afb0b3;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-bar:focus {
+  border-color: #7AB2D3; 
+  outline: none;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
